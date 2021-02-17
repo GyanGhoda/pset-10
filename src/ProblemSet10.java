@@ -30,7 +30,7 @@ public class ProblemSet10 {
         }
         return str;
 
-    }//DONE
+    }
 
     /////////////// EXERCISE 2  ///////////////
     public int maxSpan(int[] numbers) {
@@ -53,7 +53,7 @@ public class ProblemSet10 {
             }
         }
         return maxSpan;
-    } //DONE
+    }
 
 
     /////////////// EXERCISE 3  ///////////////
@@ -110,7 +110,7 @@ public class ProblemSet10 {
         }
         return numbers;
 
-    } //DONE
+    }
 
     /////////////// EXERCISE 4  ///////////////
     public int[] fix45(int[] numbers) {
@@ -120,35 +120,33 @@ public class ProblemSet10 {
         int four = 4;
         int five = 5;
 
-        if(numbers == null){
+        if (numbers == null) {
             return null;
         }
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == four) {
                 freq1++;
-            }
-            else {
+            } else {
                 freq1 = freq1;
             }
         }
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == five) {
                 freq2++;
-            }
-            else {
+            } else {
                 freq2 = freq2;
             }
         }
-        if(freq1 != freq2){
+        if (freq1 != freq2) {
             return null;
         }
-        for(int i = 0; i < numbers.length; i++) {
-            if (numbers[numbers.length-1] == four) {
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[numbers.length - 1] == four) {
                 return null;
             }
         }
 
-        for(int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == four && numbers[i + 1] == four) {
                 return null;
             }
@@ -165,9 +163,6 @@ public class ProblemSet10 {
 
         return numbers;
     }
-    //DONE
-
-
 
     /////////////// EXERCISE 5  ///////////////
     public boolean canBalance(int[] numbers) {
@@ -193,7 +188,7 @@ public class ProblemSet10 {
         }
         return (left == right);
 
-    }//DONE
+    }
 
     /////////////// EXERCISE 6  ///////////////
     public boolean linearIn(int[] outer, int[] inner) {
@@ -227,7 +222,7 @@ public class ProblemSet10 {
                 return false;
         }
         return true;
-    } //DONE
+    }
 
 
     /////////////// EXERCISE 7  ///////////////
@@ -248,7 +243,7 @@ public class ProblemSet10 {
         else{
             return null;
         }
-    }//DONE
+    }
 
     /////////////// EXERCISE 8  ///////////////
     public int[] seriesUp(int n) {
@@ -265,7 +260,7 @@ public class ProblemSet10 {
         } else {
             return null;
         }
-    }//DONE
+    }
 
     /////////////// EXERCISE 9  ///////////////
     public int maxMirror(int[] numbers) {
